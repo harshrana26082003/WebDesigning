@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>car services</title>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+           font-family: sans-serif;
+        }
+        .hero{    
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/car1.jpeg);
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+            
+        }
+        .logo{
+            width: 200px;
+        }
+        .nav1{
+            width: 100%;
+    height: 15vh;
+    margin: auto;
+   
+    display: flex;
+    align-items: center;
+        }
+        nav{
+            flex: 1;
+            padding-left: 60px;
+           
+        }
+        nav ul li{
+            display: inline-block;
+            margin: 0 20px;
+         }
+         nav ul li a{
+         text-decoration: none;
+            color: white;
+            font-size: large;
+        }
+        nav ul li a:hover{
+            color: red;
+            font-size: large;
+            font-weight: 600;
+        }
+        .butoon1{
+          margin-right: 120px;
+          padding: 18px;
+          width: 235px;
+          border: 3px solid white;
+          color: white;
+          background-color: transparent;
+        }
+        .butoon1:hover{
+            color: red;
+            background-color: white;
+            font-weight: 600;
+            border: none;
+        }
+      .info1{
+        color: white;
+        padding: 40px;
+        margin-left: 80px;
+        margin-top: 90px;
+      }
+      .info1 h1{
+        font-size: 70px;
+      }
+      .info1 p{
+        padding-top: 40px;
+        font-weight: bold;
+        font-size: medium;
+      }
+      .button2{
+      margin-left: 115px;
+          padding: 18px;
+          width: 235px;
+          border: none;
+          color: white;
+          background-color: red;
+        }
+        .button2:hover{
+            border: 3px solid red;
+            background-color: transparent;
+            color: red;
+            font-weight: bold;
+            font-size: medium;
+
+        }
+        .second{
+            width: 100%;
+            background-color: black;
+            height: 455px;
+        }
+        .second h1{
+            color: white;
+            text-align: center;
+            padding: 40px;
+            font-size: 55px;
+            font-weight: normal;
+        }
+        .second p{
+            color: lightblue;
+            text-align: center;
+            font-size: 25px;
+        }
+        .pngcar{
+            padding: 20px;
+            margin-left: 240px;
+            margin-top: 70px;
+
+        }
+        .icon img{
+            height: 150px;
+            width: 200px;
+            
+        }
+        .third{
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            margin-top: 100px;
+            padding: 70px;
+            gap: 30px;
+            align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.icon7{
+    height: 100px;
+    width: 100px;
+
+}
+   .four1 h1{
+    text-align: center;
+    margin-top: 40px;
+   }    
+   .fourimage{
+    height: 200px;
+    width: 300px;
+   }
+   .four2{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 85px;
+    gap: 20px;
+   }
+   .four2 img{
+    height: 200px;
+    width: 300px;
+   }
+   .at h1{
+    text-align: center;
+    font-size: 50px;
+    
+   }
+    .fiveimage img{
+        height: 200px;
+        width: 300px;
+   } 
+   .employe{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    padding: 30px;
+    gap: 10px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+ .works{
+    height: 500px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.60),rgba(0,0,0,0.60)),url(img/Frame\ 2-7.png);
+            background-position: center;
+            background-size: cover;
+            box-sizing: border-box;
+ } 
+ .works2{
+    color: white;
+    text-align: center;
+    padding-top: 160px;
+ }
+ .works2 h1{
+    font-size: 65px;
+    font-weight: 200;
+ }
+ .works2 p{
+    padding-top: 20px;
+    font-size: 30px;
+    padding-bottom: 70px;
+    color: lightblue;
+ }
+ .choose{
+    height: 370px;
+    width: 300px;
+    background-color: black;
+    color: white;
+ }
+  .info2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 50px;
+    gap: 20px;
+    padding-top: 50px;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.choose h1{
+    padding-top: 30px;
+    font-size: 60px;
+}
+.choose h3{
+    padding-top: 20px;
+    font-size: 30px;
+}
+.choose p{
+    padding-top: 20px;
+    font-size: 25px;
+}
+ 
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="hero">
+          <div class="nav1">
+            <img src="img/logo1.jpg.png" class="logo" >
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">FaQs</a></li>
+                    <li><a href="#">Select</a></li>
+                    <li><a href="#">Contect</a></li>
+                    
+                </ul>
+                
+            </nav>
+            <button class="butoon1"> Book an appiontment </button>
+          </div>
+          <div class="info1"><h1>Professional Auto Repair
+           <br> & Maintenance</h1>
+           <p>it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br> The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+        </div>
+        <button class="button2"> Contect us </button>
+        </div>
+    </div>
+    <div class="second">
+        <h1>Why Choose Us</h1>
+        <p>We Offer Full Service Auto Repair & Maintenance</p>
+        <img src="img/car2.png" class="pngcar">
+
+    </div>
+   <div class="third">
+       <div class="icon">
+        <img src="img/icon2.png" >
+        <h5>Diagnostics</h5>
+        <p>If your car needs a <br> mobile diagnostic check <br> done at your home or   <br> office, let AutoMechanica <br> come to you.</p>
+       </div>
+       <div class="icon">
+        <img src="img/icon 1.png" >
+        <H5>Dent & Paint</H5>
+        <p>AutoMechanica <br> specializes in car dent <br> repair and car painting <br> services for a range of <br> models.</p>
+       </div>
+       <div class="icon">
+        <img src="img/icon5.png" >
+        <h5>Oil / Lube / Filters</h5>
+        <p>AutoMechanica proudly <br> serves the Lube, Oil & <br> Filter change needs of  <br> customers' vehicle <br> performance while  <br> extending the life of your <br>vehicle.</p>
+       </div>
+       <div class="icon">
+        <img src="img/icon3.png" >
+        <h5>Brakes</h5>
+        <p>The brake system <br>consists of different parts <br>that can be fixed <br>individually. A detailed <br>quote is given to you <br>after we perform our <br>systematic brake <br>evaluation</p>
+       </div>
+       <div class="icon">
+        <img src="img/icon 6.png" >
+        <h5>Suspension</h5>
+        <p>
+            The suspension system <br>of your vehicle protects <br>you from bouncing up <br>and down due to the bad <br>road conditions and <br>bumps in the road.
+        </p>
+       </div>
+       <div class="icon">
+        <img src="img/icon 7.png"  class="icon7">
+        <H5>Detailing</H5>
+        <P>
+            AutoMechanica offers <br>
+professional car detail <br>
+services at an affordable <br>
+price. Our interior <br>
+cleaning, detailing, and <br>
+restoration services can <br>
+help you recapture that <br>
+new car look and smell.
+        </P>    
+       </div>
+</div>
+<div class="four">
+    <div class="four1">
+        <h1>
+            AutoMechanica Advantages
+        </h1>
+    </div>
+    <div class="four2">
+        <div class="fourimage">
+            <img src="img/Frame 2-3.png">
+        </div>
+        <div class="fourimage">
+            <img src="img/Frame 2-4.png">
+        </div>
+        <div class="fourimage">
+            <img src="img/Frame 2-5.png">
+        </div>
+        <div class="fourimage">
+            <img src="img/Frame 2-6.png">
+        </div>
+    </div>
+    </div>
+
+    <div class="at">
+        <h1>We Are At</h1>
+    </div>
+    <div class="employe">
+        <div class="fiveimage">
+            <img src="img/icon 8.png" class="empolye">
+            <p>35480</p>
+            <p>Satisfied Customers</p>
+       </div>
+       <div class="fiveimage">
+        <img src="img/icon10.png" class="empolye">
+        <p>39133</p>
+        <p>Customer Jobs</p>
+   </div>
+   <div class="fiveimage">
+    <img src="img/icon 10.png" class="empolye">
+    <p>25</p>
+    <p>Years Of Collective Experience</p>
+</div>
+</div>
+
+<div class="works">
+    <div class="works2">
+        <h1>How It Works</h1>
+        <p>We Offer Full Service Auto Repair & Maintenance</p>
+    </div>
+
+
+      <div class="info2">
+        <div class="choose">
+            <h1>01</h1>
+            <h3>Choose</h3>
+            <p>Choose Your Service <br> From Our Wide Range Of <br>
+                Offerings</p>
+        </div>
+        <div class="choose">
+            <h1>02</h1>
+            <h3>Book</h3>
+            <p>Make An <br>Appointment With <br>Us <br>Offerings</p>
+        </div>
+        <div class="choose">
+            <h1>03</h1>
+            <h3>Fair Pricing</h3>
+            <p>Always Get a Fair <br> 
+                Quote</p>
+        </div>
+        <div class="choose">
+            <h1>04</h1>
+            <h3>At Your Doorstep</h3>
+            <p>Get a Door Step <br>Pick up & Drop <br>Facility</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
