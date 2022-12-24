@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registation for job</title>
+    <script src="from validation.js"></script>
+    <script src="PHONE NO .JS"></script>
+   
+    <style>
+       body{
+        background-color: #f0fff0;
+        font-family: Calibri;
+       }
+       h1{
+        font-weight: bold;
+        color: #4682b4;
+        text-align: center;
+       }
+       table{
+        color: #4682b4;
+        font-size: 17px;
+        font-weight: bold;
+        border-collapse: collapse;
+       }
+       .submit{
+        height: 40px;
+        width: 150px;
+        font-family: Calibri;
+        color: white;
+        background-color: #4682b4;
+        border: none;
+        font-size: 15px;
+       }
+       span{
+        color: red;
+       }
+    </style>
+</head>
+<body>
+   <h1>Registation for job</h1>
+    <form action="" name="form1" method="get">
+        <table cellpadding="10" align="center">
+            <!-- first name -->
+            <tr>
+                <td>First Name:</td>
+                <td><input type="text" name="fname"id="fname" placeholder="Enter First Name" >
+                <span id="fname_msg"></span></td>
+            </tr>
+             <!-- Middle name -->
+             <tr>
+                <td>Middle Name:</td>
+                <td><input type="text" name="Mname" id="Mname" placeholder="EnterMiddle Name"><span id="Mname_msg"></span></td>
+            </tr>
+             <!-- Last name -->
+             <tr>
+                <td>Last Name:</td>
+                <td><input type="text" name="Lname" maxlength="30" placeholder="EnterLast Name"><span id="Lname_msg"></span></td>
+            </tr>
+             <!-- Adders -->
+             <tr>
+                <td>Adders:</td>
+                <td> <textarea name="Adders" id="" cols="30" rows="4" ></textarea>
+                    <span id="Adders_msg"></span></td>
+            </tr>
+             <!-- Date of birth -->
+             <tr>
+                <td>Date Of Birth:</td>
+                <td><input type="date" name="date" id="date" ><span id="date_msg"></span></td>
+            </tr>
+            <!-- Gender -->
+            <tr>
+                <td>Gender:</td>
+                <td><input type="radio" name="gen">Male
+               <input type="radio" name="gen" >
+               Female
+                <span class="gender_msg"></span>
+            </td>
+            </tr>
+            <!-- Experiance -->
+              <tr>
+                <td>Experiance:</td>
+                <td><select name="Experiance" >
+                    <option value="-1">---please select---</option>
+                    <option value="">10thpass</option>
+                    <option value="">12thpass</option>
+                    <option value="">B-com</option>
+                    <option value="">M-com</option>
+                    <option value="">bca</option> 
+                    <option value="">graduate</option>
+                     <option value=""> post graduate</option>
+                </select>
+            <span id="drop_msg"></span></td>
+              </tr>
+             <!-- E-mail ID -->
+            <tr>
+                <td>E-mail ID:</td>
+                <td><input type="text" name="mail"  placeholder="Enter Your E-mail ID">
+                <span id="msg_email"></span>
+                </td>
+            </tr>
+             <!-- phone no -->
+             <tr>
+                <td>Phone no:</td>
+                <td><input type="text" name="mno" maxlength="10" placeholder="Enter Your Phone no">
+                    <span id="msg_mno"></span>
+                    (10 digit no.)
+                </td>
+            </tr>
+              
+              <!-- Create password-->
+              <tr>
+                <td>Create password:</td>
+                <td><input type="password" id="pass"  placeholder="Enter Your  password">
+                    <br>
+                     <input type="checkbox" onclick="check_pass()">Show password
+                     <span id="pass_msg"></span>
+                    </td>
+              </tr>
+               <!-- Submit-->
+               <tr>
+                <td align="center" colspan="2">
+                    <input type="submit" value="submit"
+                    class="submit" onclick=" return form_valid()">
+                </td>
+               </tr>
+        </table>
+    </form>
+
+    <script src="from validation.js"></script>
+    <script src="PHONE NO .JS"></script>
+</body>
+</html>
