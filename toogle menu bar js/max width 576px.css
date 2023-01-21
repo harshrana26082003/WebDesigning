@@ -1,0 +1,32 @@
+@media (max-width:576px) {
+    .header-nav .btn-bar{
+        display: block;
+        position: relative;
+    }
+    .header-nav .right-nav{
+       display: none;
+    }
+    .header-nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+   
+    section .nav-bars .header-nav .navi{
+        display: block;
+        background-color: rgb(255, 86, 114);
+        box-shadow: 3px 1px 5px rgba(30, 30, 30, 0.614);
+        position: absolute;
+        top: 80px;
+        right: 5px;
+        width: 173px;
+        border-radius: 10px;
+    }
+    section .nav-bars .navi ul {
+        display: flex;
+        flex-direction: column;
+    }
+    section .nav-bars .navi a{
+        color: white;
+    }
+}
