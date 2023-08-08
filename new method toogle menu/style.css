@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0px 80px;
+}
+
+header{
+    background-color: teal;
+}
+header .header-p{
+    padding: 20px 0px;
+}
+.toph{
+    position: relative;
+}
+header .navbar {
+    display: flex;
+    align-items: center; 
+}
+header.navbar.logo{
+    flex: 1;
+}
+header .navbar .logo h1{
+    font-size: 45px;
+    color: white;
+}
+header .navbar .nav{
+    flex: 3;
+}
+header .navbar .nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+header .navbar .nav li{
+    padding: 10px;
+}
+header .navbar .nav a{
+    color: white;
+    font-weight: bold;
+}
+
+header .navbar .theme{
+    flex: 0.5;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 30px;
+    font-size: 25px;
+}
+header .navbar .theme .tooglebtn{
+    display: none;
+}
+header .navbar .theme .tbtn{
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* create a radom class for toogle  menu */
+header .navbar .nav-menu{
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background-color: rgb(4, 165, 165);
+    transition: 0.5s ease-in ;
+}
+header .navbar .nav-menu ul{
+    display: flex;
+    /* justify-content: space-evenly; */
+    flex-direction: column;
+    align-items: center;
+}
+header .navbar .nav-menu li{
+    padding: 10px;
+}
+header .navbar .nav-menu a{
+    color: white;
+    font-weight: bold;
+}
+
+
+
+
+/* media query apply */
+@media (max-width:576px) {
+    .container{
+        margin: 0px 20px;
+    }
+    header .navbar .nav{
+        display: none;
+    }
+    header .navbar .theme .tooglebtn{
+        display: block ;
+    }
+    header .navbar .theme{
+        flex: 1.5;
+    }
+    header .navbar .nav-menu{
+        display: block;
+    }
+}
+
+@media (min-width:576px) {
+    .container{
+        margin: 0px 40px;
+    }
+    header .navbar .nav{
+        display: none;
+    }
+    header .navbar .theme .tooglebtn{
+        display: block ;
+    }
+    header .navbar .theme{
+        flex: 1.5;
+    }
+    header .navbar .nav-menu{
+        display: block;
+    }
+}
+
+@media (min-width:992px) {
+    .container{
+        margin: 0px 80px;
+    }
+    header .navbar .nav{
+        display: block;
+    }
+    header .navbar .theme .tooglebtn{
+        display: none ;
+    }
+    header .navbar .nav-menu{
+        display: none;
+    }
+}
