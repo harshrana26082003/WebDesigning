@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="regpage">
+            <h2>New user</h2>
+            <form action="#">
+            <!-- Frist name -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Frist Name:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="fname" onblur=" return -blnkCheck(this,'msg1')" 
+                    onkeyup="return nameValid(this,'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1" class="msg"></span>
+                </div>
+            </div>
+            <!-- last name -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Last Name:</label>
+                </div>
+                <div class="col">
+                    <input type="text" id="lname" onblur=" return blnkCheck(this,'msg2')"
+                    onkeyup="return nameValid(this,'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2" class="msg"></span>
+                </div>
+            </div>
+
+            <!-- Radio button  for gender-->
+            <div class="row">
+                <div class="col">
+                    <label for="">Gender:</label>
+                </div>
+                <div class="col">
+                  <input type="radio" name="gen" id="male" onblur="checkradio(this,'msg3')">
+                  <label for="">Male</label>
+                  <input type="radio" name="gen" id="female" onblur="checkradio(this,'msg3')">
+                  <label for="">Female</label>
+                </div>
+                <div class="col">
+                    <span id="msg3" class="msg"></span>
+                </div>
+            </div>
+
+             <!-- address -->
+            <!-- <div class="row">
+                <div class="col">
+                    <label for="">Address:</label>
+                </div>
+                <div class="col">
+                    <textarea name="" id="adr" cols="30" rows="3" onblur=" return blnkCheck(this,'msg4')">
+                </textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4" class="msg"></span>
+                </div>
+            </div> -->
+
+
+
+
+
+            <div class="row">
+                <div class="col">
+                </div>
+                <div class="col">
+                    <button type="submit" onclick="return checkFromValid()">Submit</button>
+                </div>
+                <div class="col">
+                </div>
+            </div>
+            
+            </form>
+        </div>
+
+
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
