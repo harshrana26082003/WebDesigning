@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <!-- font awsom cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boostrap cdn css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color1.css">
+</head>
+<body>
+    
+    <!-- main wapper start -->
+    <div class="main-wrapper">
+        <!-- header start -->
+        <header class="header">
+            <div class="container">
+                <div class="header-main d-flex justify-content-between align-items-center">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <span>tws</span>tudy
+                        </a>
+                    </div>
+                    <button type="button" class="heder-hamburger-btn js-header-menu-toggler">
+                        <span></span>
+                    </button>
+                    <div class="header-backdrop js-header-backdrop"></div>
+                    <nav class="hedaer-menu js-header-menu">
+                        <button type="button" class="header-close-btn js-hedaer-menu-toogler"> 
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu">
+                            <li class="menu-item"><a href="index.html">Home</a></li>
+                            <li class="menu-item menu-item-has-children">
+                                <a href="#" class="js-toogle-sub-menu">Courses <i class="fas fa-chevron-down"></i></a>
+                                <ul class="sub-menu js-sub-menu">
+                                    <li class="sub-menu-item"><a href="courses.html">Courses</a></li>
+                                    <li class="sub-menu-item"><a href="courses-details.html ">Courses details</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item menu-item-has-children"> 
+                                <a href="#" class="js-toogle-sub-menu">Pages <i class="fas fa-chevron-down"></i> </a>
+                                <ul class="sub-menu js-sub-menu"> 
+                                    <li class="sub-menu-item"><a href="log-in.html">Log in</a></li>
+                                    <li class="sub-menu-item"><a href="sign-up.html">sign up</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+    </div>
+    <!-- main wapper end -->
+    
+    
+    
+    <!-- boostrap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <!-- js flie attecth -->
+    <script src="script.js"></script>
+</body>
+</html>
